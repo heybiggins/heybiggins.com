@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fffdfb;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#main-header {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 150px 15%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+#profile-pic {
+    width: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: right; /* Center icons in the container */
+}
+
+.social-icons a {
+    color: #e0dacf; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 24px; /* Icon size */
+}
+
+main {
+    padding: 1rem;
+    padding-top: 250px; /* Adjust based on header height */
+}
+
+.intro {
+    align-items: center;
+    width: 100%;
+    padding: 0px 20%;
+    box-sizing: border-box;
+}
+
+.intro p {
+    font-size: 2.3em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Creates a responsive grid layout */
+    gap: 30px; /* Space between items */
+    padding: 0px 8%;
+    margin-top: 40px; /* Space below the intro text */
+    margin-bottom: 80px; /* Space below the intro text */
+}
+
+.project {
+    position: relative;
+    background-color: #f3f0e8;
+    padding: 15px 25px; /* Adjust padding as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.project h2 {
+    font-size: 1.8em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    margin-top: 0;
+    margin-bottom: 0; /* Reduced space below the heading */
+
+}
+
+.project p {
+    font-size: 1em; /* Adjust size as needed */
+    color: #a19783; /* Adjust color as needed */
+    margin-top: 0; /* Remove top margin if any */
+    margin-bottom: 20px; /* Space above the button */
+}
+
+#project-image-the-card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%; /* Adjust based on your image's aspect ratio */
+    height: auto; /* Adjust the height to control how much of the div it takes up */
+    transform: translate(0%, 20%) rotate(-15deg); /* Adjust the rotation angle and position as needed */
+}
+
+#project-image-poetic-wicks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%; /* Adjust based on your image's aspect ratio */
+    height: auto; /* Adjust the height to control how much of the div it takes up */
+    transform: translate(-35%, -35%); /* Adjust the rotation angle and position as needed */
+}
+
+.button {
+    display: inline-block;
+    padding: 0px 10px; /* Adjust the padding to control the size of the button */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #a19783; /* The text color */
+    background-color: transparent; /* No background color */
+    border: 1px solid #a19783; /* Border color matching the text */
+    border-radius: 15px; /* Rounded corners. Adjust as needed for desired roundness */
+    text-decoration: none; /* Removes underline from links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.project:hover .button {
+    border-color: #000; /* Change border color to black when .project is hovered */
+    color: #000;
+}
+
+footer {
+    background-color: #f3f0e8;
+    color: #a19783;
+    text-align: center;
+    padding: 1rem;
+
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #a19783; /* Color for unvisited links */
+}
+
+/* BLOG STYLING */
+
+.blog-post {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #f3f0e8;
+}
+
+.blog-post h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #a19783;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #a19783
+}
+
+hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set the height of the line */
+    background-color: #a19783; /* Set the color of the line */
+    margin: 20px 0; /* Add some vertical spacing around the line */
+}
+
+.blog-image-container img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Adjust for desired roundness */
+    box-shadow: 0 0 2px 2px #f3f0e8;
+}
+
+pre {
+    background-color: #f3f0e8;
+    box-shadow: 0 0 2px 2px #f3f0e8;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the code */
+    overflow-x: auto; /* Horizontal scrolling for long lines of code */
+}
+
+code {
+    font-family: 'Courier New', monospace; /* Monospace font for code */
+    color: #a19783; /* Dark gray text color */
+}

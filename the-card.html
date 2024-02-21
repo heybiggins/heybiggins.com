@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom keyboard journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html" rel="noopener noreferrer">
+            <img src="images/heybiggins_headshot.png" alt="Profile Picture" id="profile-pic">
+        </a>
+        <div class="social-icons">
+            <a href="https://twitter.com/heybiggins" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/heybiggins" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="blog-post">
+            <h1>custom keyboard journey</h1>
+            <p class="date">january 20, 2024</p>
+            <div class="content">
+                <h2>In November 2023 I went down a mechanical keyboard rabbit hole.</h2>
+                
+                <p>One day at work I had a conversation with some co-workers about mechanical keyboards. They were walking me through their builds. The keys they chose. The switches they like. 60%, 80% keyboards. Blank keycaps.</p>
+    
+                <p>These things didn’t mean much to me at the time, to be honest I ‘heard’ the words, but they passed me by without registering.</p>
+                    
+                <p>Co-workers had talked to me about keyboards before without triggering an itch. But this time, for whatever reason, it was different. Maybe it was my late 20s angst. Maybe it was the desire to procrastinate doing other important things in life. But whatever the reason, this time it stuck. I went home that night and started googling…down the rabbit hole we go.</p>
+                    
+                <p>Hours passed. By the time I unglued my eyes from the screen, I had decided I was going to make a mechanical keyboard.</p>
+                    
+                <p>But it couldn’t be just any keyboard. If I was going to make a keyboard, it had to be ‘right’ the first time (which is a whole other story on my psychological state, but I digress).</p>
+                    
+                <p>The keyboard, I decided, needed to be a more efficient key layout than normal keyboards. Growing up, I learned on the qwerty style layout, as one did. But as my YouTube rabbit hole enlightened me, this was a completely arbitrary and suboptimal layout for clickity clacking in the modern age.</p>
+                    
+                <p>“Why should the mechanical constraints of a typewriter (<a href="https://en.wikipedia.org/wiki/QWERTY" target="_blank" rel="noopener noreferrer">link</a>) dictate the way in which I type today?”, the starry-eyed techno-optimist said to himself.</p>
+    
+                <P>If I was going to have a mechanical keyboard, then naturally I needed to have the best key layout.</P>
+    
+                <p>The furthest I got down this corner of my rabbit hole was finding some keeb purists who took a cross section of the internet and ran a ML model to determine the optimal keyboard layout (<a href="https://www.youtube.com/watch?v=EOaPb9wrgDY" target="_blank" rel="noopener noreferrer">link</a>). This struck me as the ‘right’ way to do this. Using this method I could specify the weights in the model for what I valued in an optimal typing experience. Minimal finger travel from the home row? No double tapping? Whatever I wanted. But did I know what I wanted or what was ‘right’? Of course not. So luckily my humility (laziness?) won out, and I opted to use Colemak Mod-DH (<a href="https://colemakmods.github.io/mod-dh/" target="_blank" rel="noopener noreferrer">link</a>).</p>
+    
+                <p>From research others have done (<a href="https://github.com/bclnr/kb-layout-evaluation" target="_blank" rel="noopener noreferrer">link</a>), that layout looks like it is directionally correct at being optimal. So this saved me time actually having to figure out what layout I should do.</p>
+                
+                <hr>
+    
+                <P>Well that’s probably not quite an accurate retelling. I decided on the form factor I wanted before choosing the keymap (see I’m learning proper terms). In my YouTubing, I fell hard and fast in love with Ben Vallack’s in-depth explainers. One particular design, The Card (<a href="https://github.com/benvallack/The-Card" target="_blank" rel="noopener noreferrer">link</a>) won my heart.</P>
+    
+                <p>I know, I know. Here I am, never having used anything but a laptop keyboard, and I'm deciding to make a custom pcb mechanical keyboard. Yeah, I know. What if I don't like it? What if I decide it’s not worth the trouble? Uhh, what about the fact that I don’t know anything about PCB design, soldering, or writing firmware? Just buy the Planck (<a href="https://olkb.com/collections/planck" target="_blank" rel="noopener noreferrer">link</a>), no sense going too minimal yet. Plus I can take out keys if I want to go smaller. Or fine, if I want to go further, buy the Voyager (<a href="https://www.zsa.io/voyager/" target="_blank" rel="noopener noreferrer">link</a>). Or heck if I want a bit more customizability and an enthusiast board, pick the Ferris Sweep (<a href="https://github.com/davidphilipbarr/Sweep" target="_blank" rel="noopener noreferrer">link</a>). I could even find a PCB that I solder myself if I want to. And it’s like 90% the same as The Card…</p>
+    
+                <p>Yeah I hear you, but counterpoint. Look how pretty this minimal design is</p>
+            
+                <div class="blog-image-container">
+                    <img src="images/the_card_desk.png" alt="The Card keyboard, screenshot from YouTube b roll.">
+                </div>
+                
+                <p>I am a minimalist, or at least aspiring to be one. So this design just spoke to me. A keyboard with each half as small as a credit card? Whhhat. just look at how clean that is! </p>
+    
+                <p>“How hard can learning PCB design, soldering, or writing firmware be?”, the man naively thought to himself.</p>
+    
+                <p>So I was set. I would make that keyboard. Did it matter that I had never used a keyboard with only 26 keys? Nope. did it matter that I just learned what cherry MX  v. Kailh choc switches were. Nope.</p>
+    
+                <p>Did I know I was way in over my head with this? Yeah absolutely. But I didn't care. I thought it’d be such a fun project that scratched my itch to learn something new. Get in a little too deep. Feel hopelessly lost and under qualified to complete the keyboard. Idk, I craved this.</p>
+    
+                <p>Okay…cut the drama. I wasn’t that hopelessly lost on the journey ahead. I had phenomenal guides who blazed the trail before me. Dénes Bán created Ergogen (<a href="https://docs.ergogen.xyz/" target="_blank" rel="noopener noreferrer">link</a>) for building KiCad PCBs and the aforementioned Ben Vallack posted hours of content on building keyboards from start to finish (<a href="https://youtu.be/UKfeJrRIcxw" target="_blank" rel="noopener noreferrer">link</a>). So I was certainly relying on people vastly more well versed in these topics than I would be. Without these two I would never have been able to take this on.</p>
+    
+                <p>So, in an all too inadequate of a way, I just want to say – thank you Ben and Dénes.</p>
+    
+                <hr>
+    
+                <h2>Learning to design.</h2>
+    
+                <p>So I had settled on a design. Form before function after all lol. Initially I thought I'd be able to maybe just upload Ben’s design to a PCB manufacturer and skip most of the hard parts. But Ben’s design had a little corner that jutted out. I wanted to see if I could remove that. I very quickly realized I wasn't going to be able to just change one thing and have it work. I realized that I would need to actually learn how PCBs and Ergogen worked. This suddenly became a much longer project.</p>
+    
+                <p>So further down the rabbit hole I went. Reading documentation, watching tutorials. The best one I found was this gem (<a href="https://flatfootfox.com/ergogen-introduction/" target="_blank" rel="noopener noreferrer">link</a>) by FlatFootFox. It walks through literally everything. It was my map in this new territory.</p>
+    
+                <p>I’m new-ish to programming and reading documentation, so getting through Ergogen’s docs on my own proved a bit challenging, but paired with FlatFootFox’s interpretation it went surprisingly smoothly.</p>
+    
+                <p>When building the Ergogen config.yaml file there was one part I kept getting tripped up at. I kept getting an error that I couldn’t add the ref or reverse lines below:</p>
+    
+                <pre><code>promicro:
+    what: promicro
+    params:
+        orientation: "down"
+    where:
+        ref: matrix_thumb_bottom
+        shift: [0.4, kx+6.3]
+        rotate: -90
+            
+power:
+    what: pcm12
+    params:
+        reverse: true
+        from: pos
+        to: RAW
+    where:
+        ref: matrix_index_top
+        shift: [1.1kx, 6.4]
+        rotate: 180</code></pre>
+                    
+                <p>I was so confused. Nothing seemed incorrect to me, but I kept getting errors saying reverse and ref were not allowed. I reread the guide, rewrote it, but still the same error.</p>
+    
+                <p>Then I figured out my problem. Up until this point I had just been writing the config.yaml file in TextEdit. I know, I know. But I didn't think I'd have to do any real coding, and the yaml file didn’t really seem like real code. But when I copy and pasted this over to Replit, I found out the error was with my indentation.</p>
+            
+                <p>Apparently in TextEdit the number of spaces I used was throwing the error. But in Replit when I tabbed over the problem was solved! I felt so silly. But hey, that’s a learning: never work out of TextEdit lol.</p>
+            
+                <hr>
+    
+                <p>After that hurdle, using Ergogen for the rest of the build went pretty smoothly. I mean a card is a pretty simple design. A rectangle with rounded corners. 13 keys. 13 diodes. A reset button. An on/off switch.</p>
+    
+                <p>Ergogen’s output plugs right into KiCad (<a href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer">link</a>), which is a software tool for building the actual PCB. At this point the next step was to wire everything together. Fortunately Ergogen / KiCad make this really easy. Specifying the from and to for each component in the yaml file ensures that KiCad will only allow each component to be wired to the specified one.</p>
+    
+                <p>I probably re-wired it 15 times before I finally got it ‘right’. A lot of that time was honestly spent playing. Trying to find the best layout for the tracks was fun. It honestly felt like a game. It was art too. Laying out the tracks in an aesthetically pleasing and technically efficient way, just felt beautiful. But for real, if someone made a game where you had to lay down PCB tracks, I would definitely play it. It’d be cool if each level was a PCB for an actual product. Anyways…</p>
+    
+                <p>Here is the final result.</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/pcb_wiring.png" alt="Wiring diagram for a PCB generated with KiCad.">
+                </div>
+    
+                <p>Love.</p>
+    
+                <p>I ended up doing some Via placement in KiCad as well as rotating the switches there. So the final yaml file isn’t the exact output, but it is close.</p>
+    
+                <p>What I love about this step in the process is that I was able to understand PCB creation enough in order to modify Ben’s design to make it perfectly card shaped without any notch on top. Additionally, the diodes were another design departure I made. Although that was more as a learning tool than strictly necessary. Diodes weren’t needed for my design since there were only 13 keys to each half. That’s small enough that they can be directly wired up, which is what Ben did. But for boards with a higher number of keys, they can’t all be directly wired to one microcontroller. That is why they use diodes to form a matrix of rows and columns.</p>
+    
+                <p>Now I don’t fully understand what is going on with the diodes, but from reading this KBD post (<a href="https://kbd.news/The-Japanese-duplex-matrix-1391.html" target="_blank" rel="noopener noreferrer">link</a>) I have a hand-wavy understanding that was actually good enough to build this!</p>
+    
+                <hr>
+    
+                <p>Alright, now that I’d set the tracks and checked all the connections for the 4th time, the design was complete. I was ready to get the PCB manufactured. The website I chose for this was JLCPCB (<a href="https://jlcpcb.com/" target="_blank" rel="noopener noreferrer">link</a>). To my astonishment I was able to get 5 PCBs with my custom design shipped to me for *checks notes* $5.19. Yeah…like what?! Soo cheap.</p>
+    
+                <p>“I thought people said keyboards were an expensive hobby!” he says, completely discounting the tens of hours he spent designing.</p>
+    
+                <p>I opted for the black color, and may I just say 😍</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/pcb_render.png" alt="The PCB rendered virtually by JLCPCB.">
+                </div>
+    
+                <p>I am so excited now. Per FlatFootFox’s recommendation I now buy all the parts needed to make this an actual keyboard!</p>
+    
+                <ul>
+                    <li>PCBs: $5.19</li>
+                    <li>Hot-swap sockets: $9.00</li>
+                    <li>Choc switches: $42.00</li>
+                    <li>Diodes: $1.50</li>
+                    <li>Reset switch: $1.50</li>
+                    <li>Power switch: $2.00</li>
+                    <li>Nice!Nano v2.0: $50.00</li>
+                    <li>Battery: $8.00</li>
+                    <li>Sockets / Pins: $1.60</li>
+                </ul>
+    
+                <p>And the tools…</p>
+    
+                <ul>
+                    <li>Solder: $22.98</li>
+                    <li>Soldering iron kit: $19.00</li>
+                    <li>Soldering mat: $19.99</li>
+                    <li>Multimeter: $20.94</li>
+                    <li>Wire cutter: $6.97</li>
+                    <li>Flux pen: $7.95</li>
+                    <li>Isopropyl alcohol: already had</li>
+                </ul>
+    
+                <p>Shipping: $8.70</p>
+    
+                <p>Total: $259.32</p>
+    
+                <p>Hmm…okay, fine I get how this can be an expensive hobby now LOL.</p>
+    
+                <hr>
+    
+                <h2>Building the firmware.</h2>
+    
+                <p>While I waited for everything to ship, I got started on the next completely foreign concept: writing firmware. Since my keyboard is a “split” keyboard and using the Nice!Nano v2.0, I had to use ZMK (<a href="https://zmk.dev/" target="_blank" rel="noopener noreferrer">link</a>). I started by reading through the ZMK docs, which were fairly approachable. I even poked around Zephyr (<a href="https://docs.zephyrproject.org/latest/" target="_blank" rel="noopener noreferrer">link</a>), since that’s what ZMK is built on top of…and that didn’t really make much sense to me. Luckily I didn’t need to understand Zephyr in order to get ZMK to work.</p>
+    
+                <p>Anyways, I scanned through all of ZMK’s keyboard behavior documentation to get a sense of what was possible, then hopped into the New Keyboard Shield guide (<a href="https://zmk.dev/docs/development/new-shield" target="_blank" rel="noopener noreferrer">link</a>). This was :chefs-kiss: thorough. I basically was able to copy it verbatim. The one tricky part was the keymap file. I didn’t really have a sense of what I should do. I kinda winged it.</p>
+    
+                <p>I built out 5 layers. This was also basically winging it. Since my keyboard had 26 keys (13 per half), I couldn’t put the whole alphabet in one layer. Or rather I could just barely. But that wouldn’t leave room for any punctuation or ability to shift to other layers. Well not unless I wanted to do something wonky. So this is the layout I decided on:</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/alpha_one.png" alt="Keymap layout for the alpha1 layer.">
+                </div>
+    
+                <div class="blog-image-container">
+                    <img src="images/alpha_two.png" alt="Keymap layout for the alpha2 layer.">
+                </div>
+    
+                <p>For the alphabet, I followed the Colemak Mod-DH layout, more or less. I needed to get creative with placing a few keys in the 2nd layer, but since they are used less often I thought that was agreeable.</p>
+    
+                <p>Layer 3 is for arrow keys, screen brightness, and volume.</p>
+    
+                <p>Layer 4 is numbers, numeric operations, and symbols.</p>
+    
+                <p>Layer 5 is just a few keys for resetting the keyboard and reflashing firmware.</p>
+    
+                <p>I kept a few things constant across the layers: backspace, enter, mod keys, layer navigation. While not present in every layer, these are always in the same position. This helps ensure easier keymapping in my memory.</p>
+    
+                <p>Lastly I ‘guessed’ at the behaviors I would want. Key press, home row mod, hold tap. Based on the documentation these seemed right. But the timing is still very *shrug* to me. I will need to test it out before knowing what I need to change.</p>
+    
+                <p>Anyways, I popped this thing into Github Actions (per the docs), and after a few small failures around how I was implementing key behaviors, it built without error. (:</p>
+    
+                <hr>
+    
+                <h2>Unboxing the hardware.</h2>
+    
+                <p>And by now…my keyboard parts had all arrived in the mail. The PCB… ugh, just wow.</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/pcb_delivered.jpg" alt="The PCB delivered and unboxed on a desk.">
+                </div>
+    
+                <p>That gloss black. The track layout. It was my design. I knew how it was laid out and why. It was surreal holding it, turning it over in my hand. Still is. This project became ‘real’ now in a way it hadn’t before. Even though I knew the size, seeing it was a different experience. I couldn’t stop grinning. This was my art.</p>
+    
+                <p>The individual components too, so tiny! I didn’t order a magnifying glass, but in retrospect I very much should have. The eye strain is real.</p>
+    
+                <p>Anyway, by now so much time had passed from my original YouTube rabbit hole foray that I only vaguely remembered how this whole soldering thing works. So back in I went. A couple hours later, I emerged and felt confident I had the theory down. So I rolled out my heat-resistant mat, plugged in the soldering iron, and grabbed an extra pin, my flux pen, the solder, and a practice PCB.</p>
+    
+                <p>Once the iron was hot, I held the solder to it. The solder melted instantly. Easy enough. Then I placed the pin in a hole in the PCB, held the iron against it, and pushed the solder into the point at which the pin and iron met. Voila. A soldered pin.</p>
+    
+                <p>A couple observations. The solder is really good at sticking to itself and not making a mess. Like surprisingly good. That is really cool. The placement of the iron really matters in order to make sure both the component and the PCB pad heat up properly. Finally, it heats up and cools very quickly. That helps for adjusting around part placement. Nice. At this point the only thing I feel I have to worry about is making sure not to add too much solder. I have a solder wick, but best case I do not have to use it!</p>
+    
+                <hr>
+    
+                <h2>Assembling the board.</h2>
+    
+                <p>I spent a few hours over 2 days soldering the board together. First was the hotswap sockets. Those were super easy to place. Two PCB pads each. Two holes in the board, which they slotted into. Placement was simple. I started with one at a time, but then quickly progressed to placing whole rows. For the second board, I did all of them in one go. The fun trick here was putting solder down on both pads for every socket. Then putting each socket into the approximately correct position. Next heating up one side for the solder already there to become molten. The socket would sit down into the guide holes tilted toward that side. Repeat this on the other side of the socket, and it was now flush to the board and soldered in place.</p>
+    
+                <p>The matrix of diodes came second. These also had two solder points, so the same pattern applied here. The added nuance here was that the diodes were incredibly tiny, so I had to be very careful ensuring they were aligned the proper direction. If they weren’t then the current wouldn’t flow, and the spice…err…current must flow! The trickiest thing about the diodes was using pliers to move, place, and hold them in the correct manner. It’s delicate, precise work, and I was definitely not used to it. There was a learning curve there for sure. But luckily, no mess ups (:</p>
+    
+                <p>Next up was placing the reset button and on/off switch. The reset button was straightforward. Just two points of contact like the sockets and diodes. The on/off switch was a bit more complex. It has 7 places for solder. Four to hold it in place, 3 for actually connecting to the PCB circuitry. I followed my same technique of placing solder down on each pad. With so many points of contact this actually made it more difficult to get the piece flush. So if I were to do it over again, I would only put solder on one or two pads, get the positioning right, then solder all the others into place.</p>
+    
+                <p>So now all that was left was the battery and Nice!Nano v2.0. From videos I knew I wanted to socket my microcontroller in case I wanted to use it for a different project in the future. Socketing means that it isn’t soldered to the board. There are pins soldered to the board, then the microcontroller “sockets” into those pins. Think plugging your phone charger into a wall outlet. That’s what I was doing.</p>
+    
+                <p>Putting the pins in was straightforward and really satisfying. The work demanded less precision than the hotswap sockets or diodes. So by this point it felt pretty easy.</p>
+    
+                <p>Then came the battery. This was not fun. Typically you would not solder a battery directly to a board. This is for a few reasons. One, if you want to use the battery later, this makes it easier. Two, cutting wires to size and directly soldering a live battery to a PCB is stressful.</p>
+    
+                <p>Well in my case it was. Because, it turns out, I bought the wrong kind of wire cutters. So I had to carefully cut the wire insulation off without cutting through the wire beneath. Then soldering the wires into the board was a pain. This was also an equipment problem. I didn’t have anything to hold it securely in place to make soldering easy.</p>
+    
+                <p>Oh and what was I soldering the battery to? Valid question. I placed two vias in the board then routed them to the microcontroller power / ground. With hindsight I realized that I placed them too close together. This made the prospect of accidentally shorting the battery a bit too real. Hence the stressful experience. But once done, I checked it with my multimeter, and no short! Finally, I placed the microcontroller on top to test the fit. And it fit! So now the most stressful part was behind me.</p>
+    
+                <p>Before I soldered the microcontroller into place, I tested the circuit. With the battery connected, presumably flipping the on switch would connect everything up. I should see a blue light on the microcontroller light up.</p>
+    
+                <p>…</p>
+    
+                <p>IT WORKED! The circuit at least from the battery to the microcontroller was wired up correctly! Nothing overheated or blew up, so yay (:</p>
+    
+                <p>Alright, last step. Soldering on the microcontroller. This was similar to putting the pins into the PCB, so nothing new or exciting to report here. Just nerves since this was the final step.</p>
+    
+                <p>And just like that, it was all connected up! Blue light turning on when I flip the switch. So far, so good.</p>
+    
+                <p>Repeat and fast forward all the above for the reverse side of another PCB to make the 2nd half of the split keyboard. Voila! Two completed boards!</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/pcb_soldered.jpg" alt="The PCB with sockets, diodes, on/off switch, and reset button soldered into place.">
+                </div>
+    
+                <p>The final bit of polish here was removing the flux. My tools of choice, isopropyl alcohol and an old toothbrush head. It took a few rounds to remove it all, but this was an easy and stress-free process by comparison to the soldering.</p>
+    
+                <hr>
+    
+                <p>So this brings me to the part where the keyboard hardware comes together. Socketing switches and slotting keycaps. Let me tell you. This part was so satisfying. Each switch locking into place. The aesthetic of blank white and black keycaps. And of course the clickity clack of pressing the keys for the first time. Ugh. I could not stop smiling…or ogling this keyboard!</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/the_card_assembled.jpg" alt="The completed split keyboard, one half with black keycaps and the other with white keycaps.">
+                </div>
+    
+                <hr>
+    
+                <h2>Putting it all together!</h2>
+    
+                <p>Now for the finale. While this would make a lovely piece of art, that was not why I set out on this journey. Time to flash the firmware!</p>
+    
+                <p>Alright, plug in the keyboard to my laptop… Open up the drive… Paste in the firmware…</p>
+    
+                <p>ERROR</p>
+    
+                <p>Well that’s not good. Hmm, Github Actions said the firmware built successfully. So what gives?</p>
+    
+                <p>Quick google…</p>
+    
+                <p>Ahh, so it’s some weird MacOS bug with copying files to an external hard drive (<a href="https://discussions.apple.com/thread/254020458" target="_blank" rel="noopener noreferrer">link</a>). Well let's try to get the file ported over using Terminal.</p>
+    
+                <p>…</p>
+    
+                <p>Okay that seemed to work… Let’s eject the keyboard… It’s showing up in my laptop’s bluetooth menu!!!</p>
+                
+                <p>Connecting…</p>
+    
+                <p>…</p>
+    
+                <p>AHHHHHH!!!!!!!!</p>
+    
+                <p>I’M TYPING ON THE KEYBOARD!!! OH MY GOSH IT WORKS! IT ACTUALLY WORKS!</p>
+    
+                <p>I was honestly in a bit of disbelief. Even though I knew that I had triple checked everything with the PCB routing, the soldering, the firmware…the fact that it actually worked?! Just wow. Grinning ear to ear.</p>
+    
+                <hr>
+    
+                <h2>Concluding thoughts</h2>
+    
+                <p>If you can’t tell, I was a bit excited about this haha. I hoped I could do it, but honestly it felt like a pretty daunting project when I set out to accomplish it. And now that we’re here…it feels really satisfying to know I built this thing and understand how it works (well not the super deep technical elements, but enough to build exactly the thing I wanted).</p>
+    
+                <p>This is the first time I’ve built a piece of hardware, so that is especially cool for me. Really it opens up a new realm of what is possible for me. That is incredibly empowering and gratifying.</p>
+    
+                <p>So what comes next? Well I still don’t have a case. And I will need to tinker around with the keymap in order to dial in the behaviors that feel the most natural and perform how I want them to. I might also find that I want to update how the keys are laid out in the keymap. Or I might want to switch out the keycaps and switches.</p>
+    
+                <p>But the awesome thing about any of those pieces is that I feel competent. I know that those tasks are well within my capabilities now.</p>
+    
+                <hr>
+    
+                <h2>So to wrap this up with a bow…</h2>
+    
+                <p>I’m grateful for this project, because I feel competent. I took on something that was daunting and outside of my comfort zone. I leveraged knowledge from an engaged and caring community. I learned new skills and built something that was exactly what I envisioned. Along the way I built an actual understanding of how it works.</p>
+    
+                <p>After my formal education ended, I’ve found it difficult to keep learning. Cheap dopamine from Netflix, Twitter / X, or YouTube is constantly beckoning. But this keyboard showed me for the first time in a long while just how fulfilling building something and understanding it can be.</p>
+    
+                <p>Here’s to continued learning and honing my ability to swap cheap dopamine for fulfilling endeavors.</p>
+    
+                <div class="blog-image-container">
+                    <img src="images/pcb_halfway.jpg" alt="Two halves of the split keyboard, one fully assmbled, the other just the PCB with switches and keycaps strewn about.">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
