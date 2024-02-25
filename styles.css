@@ -232,11 +232,11 @@ code {
     }
 
     .intro {
-        padding: 0px 10%; /* Reduce horizontal padding */
+        padding: 0px 2%; /* Reduce horizontal padding */
     }
 
     .projects {
-        padding: 0px 5%; /* Reduce horizontal padding */
+        padding: 0px 0%; /* Reduce horizontal padding */
         grid-template-columns: 1fr; /* Change to one column layout */
     }
 
@@ -252,8 +252,8 @@ code {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 400px; /* Adjust based on your image's aspect ratio */
-        height: auto; /* Adjust the height to control how much of the div it takes up */
+        width: auto; /* Adjust based on your image's aspect ratio */
+        height: 70%; /* Adjust the height to control how much of the div it takes up */
         transform: translate(3%, 20%) rotate(-15deg); /* Adjust the rotation angle and position as needed */
     }
     
@@ -261,8 +261,8 @@ code {
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 150px; /* Adjust based on your image's aspect ratio */
-        height: auto; /* Adjust the height to control how much of the div it takes up */
+        width: auto; /* Adjust based on your image's aspect ratio */
+        height: 40%; /* Adjust the height to control how much of the div it takes up */
         transform: translate(-35%, -35%); /* Adjust the rotation angle and position as needed */
     }
 
