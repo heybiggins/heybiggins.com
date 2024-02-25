@@ -64,7 +64,7 @@ main {
     gap: 30px; /* Space between items */
     padding: 0px 8%;
     margin-top: 40px; /* Space below the intro text */
-    margin-bottom: 80px; /* Space below the intro text */
+    margin-bottom: 100px; /* Space below the projects */
 }
 
 .project {
@@ -73,7 +73,7 @@ main {
     padding: 15px 25px; /* Adjust padding as needed */
     border-radius: 15px;
     overflow: hidden;
-    height: 400px;
+    height: 350px;
 }
 
 .project h2 {
@@ -95,8 +95,8 @@ main {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 90%; /* Adjust based on your image's aspect ratio */
-    height: auto; /* Adjust the height to control how much of the div it takes up */
+    width: auto; /* Adjust based on your image's aspect ratio */
+    height: 80%; /* Adjust the height to control how much of the div it takes up */
     transform: translate(0%, 20%) rotate(-15deg); /* Adjust the rotation angle and position as needed */
 }
 
@@ -138,6 +138,26 @@ footer {
 
 a {
     color: #a19783; /* Color for unvisited links */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding: 12px 20px 0px 20px;
+    background-color: #fffdfb;
+    color: #a19783;
+    font-size: 2.8em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #e0dacf;
+    cursor: pointer;
+    display: none; /* Hide the button initially */
+    z-index: 1001; /* Make sure the button is above other content */
+}
+
+#back-to-top:hover {
+    background-color: #f3f0e8;
 }
 
 /* BLOG STYLING */
@@ -196,4 +216,61 @@ pre {
 code {
     font-family: 'Courier New', monospace; /* Monospace font for code */
     color: #a19783; /* Dark gray text color */
+}
+
+/* Adjust for smaller screen sizes */
+
+@media (max-width: 845px) {    
+    #main-header {
+        top: 0; /* Align with the top of the viewport */
+        padding: 75px 15%;
+        background-color: #fffdfb;
+    }
+
+    #main-header.shadow {
+        box-shadow: 0 0 2px 2px #f3f0e8;
+    }
+
+    .intro {
+        padding: 0px 10%; /* Reduce horizontal padding */
+    }
+
+    .projects {
+        padding: 0px 5%; /* Reduce horizontal padding */
+        grid-template-columns: 1fr; /* Change to one column layout */
+    }
+
+    .project {
+        height: 300px; /* Allow project height to adjust to content */
+    }
+
+    .intro p {
+        font-size: 1.8em; /* Reduce font size */
+    }
+
+    #project-image-the-card {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px; /* Adjust based on your image's aspect ratio */
+        height: auto; /* Adjust the height to control how much of the div it takes up */
+        transform: translate(3%, 20%) rotate(-15deg); /* Adjust the rotation angle and position as needed */
+    }
+    
+    #project-image-poetic-wicks {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 150px; /* Adjust based on your image's aspect ratio */
+        height: auto; /* Adjust the height to control how much of the div it takes up */
+        transform: translate(-35%, -35%); /* Adjust the rotation angle and position as needed */
+    }
+
+    .blog-post {
+        padding: 20px; /* Adjust padding as needed */
+    }
+
+    .blog-post h1 {
+        font-size: 2em; /* Reduce font size */
+    }
 }
