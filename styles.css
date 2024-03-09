@@ -109,6 +109,15 @@ main {
     transform: translate(-35%, -35%); /* Adjust the rotation angle and position as needed */
 }
 
+#project-image-immi {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto; /* Adjust based on your image's aspect ratio */
+    height: 60%; /* Adjust the height to control how much of the div it takes up */
+    transform: translate(-20%, 0%); /* Adjust the rotation angle and position as needed */
+}
+
 .button {
     display: inline-block;
     padding: 0px 10px; /* Adjust the padding to control the size of the button */
@@ -264,6 +273,15 @@ code {
         width: auto; /* Adjust based on your image's aspect ratio */
         height: 40%; /* Adjust the height to control how much of the div it takes up */
         transform: translate(-35%, -35%); /* Adjust the rotation angle and position as needed */
+    }
+
+    #project-image-immi {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: auto; /* Adjust based on your image's aspect ratio */
+        height: 60%; /* Adjust the height to control how much of the div it takes up */
+        transform: translate(-20%, 0%); /* Adjust the rotation angle and position as needed */
     }
 
     .blog-post {
